@@ -1,0 +1,32 @@
+
+  body {
+     display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh; 
+    font-family: Arial;
+     background: black;
+     }
+
+  .puzzle
+   {
+     display:grid;
+    grid-template-columns: 
+    repeat(3,100px); 
+    gap:5px;
+     margin-top:20px;
+    }
+
+  .piece {
+    width:100px; 
+    height:100px; 
+    background:#fff;
+     border:2px solid #333;
+    display:flex; 
+    justify-content:center;
+     align-items:center; 
+     font-size:2rem; 
+     cursor:pointer;
+     }
+
