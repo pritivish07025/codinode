@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>we are learning Dom Manipulation</p>
+   <h1>node</h1>
+
+   <script>
+    var el=document.createElement("button");
+    el.innerText="click me";
+    var p= document.querySelector("p");
+    p.append(el);
+    let para=document.createElement("p");
+    para.innerHTML="<b>we are new node</b>";
+    let btn=document.querySelector("button");
+    btn.after(para);
+    para.innerHTML="<u>we are new node</u>";
+    btn.after(para);
+    el.addEventListener("click",function(){
+        console.log("button clicked");
+    });
+    
+
+
+   </script>
+</body>
+</html>

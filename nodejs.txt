@@ -1,0 +1,8 @@
+1. It is a javascript run time environment 
+2. its run over loacl side as wel as server side
+3. it is a open source cross platform 
+4. event driven, non input/output system 
+5. asyncronous ke used ke liye hum call back function use karte hai.
+6. it shows asyncronous behaviour 
+
+// callback function wo function hota hai jisko hum as a argument pass karte hai, as a argument use hone ki wajah se ye last mein execute hoga 
