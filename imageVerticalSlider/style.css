@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-color: #222;
+}
+
+.piece {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-image: url(https://www.drivencarguide.co.nz/media/wgklq1q2/lamborghini-revuelto-opera-unica-china-1-2048x1366.webp);
+  background-size: 400px 400px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  border-radius: 6px;
+}
+
+.piece.show {
+  opacity: 1;
+  transform: scale(1);
+}

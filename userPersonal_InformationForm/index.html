@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content ="width=device-width , intial-scale=1.0">
+    <title>USER PERSONAL INFORMATION FORM</title>
+    <style>
+        body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        form{
+            height: 900px;
+          width: 345px;
+          background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.689);
+        }
+        fieldset{
+            height: 880px;
+            width: 310px;
+            border:  3px solid black;
+            border-radius: 8px;
+        }
+        legend{
+            font-size: 1rem;
+            text-align:center;
+        }
+        label {
+            display: block;
+            margin-bottom: 2px;
+            
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            border: 1.5px solid black;
+            border-radius: 4px;
+        }
+        .gender-group {
+            margin-bottom: 10px;
+        }
+        .gender-group label {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+input[type="submit"]:hover{
+    background-color: dimgray;
+    color: white;
+}
+        
+    </style>
+</head>
+<body>
+    <form class="form">
+    <fieldset>
+        <legend >User Personal Information </legend>
+        <br>
+        <label for="name" class="label1">NAME:</label><br>
+        <input type="text" name="name"  id="name" required placeholder="Enter your name">
+        <br><br>
+        <label for ="email">Email:</label><br>
+        <input type="email" name="email"  id="email" required placeholder="Enter your email"> <br><br>
+        <label for ="password">PASSWORD:</label><br>
+        <input type="password" name="password"  value ="password" id="password" required placeholder="Enter your password"> <br><br>
+        <label>Enter your gender:</label><br>
+            <div class="gender-group">
+                <input type="radio" name="gender" value="male" id="male" required />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" required/>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="others" id="others" required />
+                <label for="others">Others</label>
+            </div>
+             <br><br>
+            <label for="dob">Enter your Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required />
+             <br><br>
+             <label for="time">Time:</label><br>
+             <input type="time" name="time" value="time" id="time" required placeholder="Enter time"><br><br>
+             <label for="document">Resume:</label><br>
+             <input type="file" name="document " value ="document" id="document" required placeholder ="Upload Resume"><br><br>
+            <label for="address">Enter your Address:</label><br>
+              <textarea id="address" name="address" required></textarea><br><br>
+            <input type="submit" value="Submit" />
+            </fieldset>
+    </form>
+
+</body>
+</html>

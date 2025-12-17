@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Square Box Background + Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Login Form</h1>
+  <div class="login-container">
+    
+    <div class="form-box">
+      <form action="#">
+        <div class="input-box">
+          <input type="text" required placeholder="Username">
+        </div>
+        <div class="username">
+          <input type="password" required placeholder="Enter your Password">
+          <div class="btn">
+            <button class="btn-1" type="submit">Login</button>
+          </div>
+        </div>
+        <div class="regi-link">
+          <p>Don't have an account? <a href="#" class="sign-up-link">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script>
+  function createBox() {
+  const box = document.createElement('div');
+  box.classList.add('box');
+
+  const size = Math.floor(Math.random() * 50) + 50; 
+  box.style.width = size + 'px';
+  box.style.height = size + 'px';
+
+  box.style.background = `linear-gradient(135deg, #9894bb, #736ea8, #37377f)`;
+
+  box.style.left = Math.random() * (window.innerWidth - size) + 'px';
+  box.style.animationDuration = (4 + Math.random()*4)+'s';
+
+  document.body.appendChild(box);
+  box.addEventListener('animationend', () => box.remove());
+}
+
+setInterval(createBox, 400);
+</script>
+
+</body>
+</html>

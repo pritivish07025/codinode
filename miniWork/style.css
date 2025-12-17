@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+.img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: 200px;
+}
+#nav{
+
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.311);
+     backdrop-filter: blur(15px);
+    padding:40px 50px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+#nav h1{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+#nav i{
+    color:white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#main{
+    color: white;
+    height: 100%;
+    width: 100%;
+   background-color: black;
+    background-position: center;
+   
+}
+#box{
+    height: 100%;
+    width: 50vh;
+    background-color: rgba(255, 255, 255, 0.473);
+    position: absolute;
+    top: 0;
+    right: -50vh;
+    backdrop-filter: blur(15px);
+    padding: 150px 60px;
+}
+#box h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: black;
+    margin-bottom: 5px;
+}
+#box i{
+    position:absolute;
+    top:5%;
+    right:10%;
+    color:white ;
+    border-radius:50%;
+    padding:5px;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+H2{
+    font-size: 7rem;
+    font-weight: 900;
+    color: #24cfa6;
+    margin-top: 15%;
+    text-align: center;
+    overflow: hidden;
+}
+h2 span{
+    display: inline-block;
+}
