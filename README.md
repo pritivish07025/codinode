@@ -15,7 +15,7 @@ JavaScript (ES6+) – Logic & interactivity
 GSAP / Animations – Motion & effects
 
 ▶️ How to Run Any Project
-git clone https://github.com/pritivish07025/CODINODE.git
+git clone https://github.com/pritivish07025/CODINODE.git<br>
 cd CODINODE
 
 
